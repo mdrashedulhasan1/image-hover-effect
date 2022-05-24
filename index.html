@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        figure{
+            height: 400px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        figure img{
+            height: 400px;
+            width: 400px;
+            transition: all 2s linear;
+        }
+        figcaption{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: all 2s linear;
+            color: white;
+            opacity: 0;
+        }
+        figure:hover figcaption{
+            opacity: 1;
+            background-color: rgba(18, 17, 17, 0.2);
+        }
+        figure:hover img{
+            transform: scale(1.2);
+            
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            background-color: rgba(116, 114, 114, 0.329);
+            font-size: 30px;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <figure>
+        <img src="Rashedul Hasan.png" alt="">
+        <figcaption>
+            <h1>My Info</h1>
+            <button>Download</button>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="Rashedul Hasan.png" alt="">
+        <figcaption>
+            <h1>My Info</h1>
+            <button>Download</button>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="Rashedul Hasan.png" alt="">
+        <figcaption>
+            <h1>My Info</h1>
+            <button>Download</button>
+        </figcaption>
+    </figure>
+   </div>
+</body>
+</html>
